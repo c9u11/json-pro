@@ -1,16 +1,17 @@
-
-import AceEditor from "react-ace";
+import { useRecoilValue } from "recoil";
+import { ThemeProvider } from "styled-components";
+import { isDarkAtom } from "./atom/themeAtoms";
+import BaseLayout from "./components/BaseLayout";
+import Content from "./components/Content";
+import { darkTheme, lightTheme } from "./theme";
 
 function App() {
+  const isDark = useRecoilValue(isDarkAtom);
   return (
-    <div>
-      <AceEditor
-        mode="json"
-        theme="github"
-        name="editor1"
-        editorProps={{ $blockScrolling: true }}
-      />
-    </div>
+    <ThemeProvider theme={isDark ? darkTheme : lightTheme}>
+      <BaseLayout></BaseLayout>
+      <Content></Content>
+    </ThemeProvider>
   );
 }
 
