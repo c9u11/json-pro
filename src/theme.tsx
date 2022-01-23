@@ -12,12 +12,12 @@ export const lightTheme: DefaultTheme = {
 }
 
 export const darkTheme: DefaultTheme = {
-  bgColor: "#2B303B",
+  bgColor: "#0e1015",
   borderColor: "#58627d",
   primaryTextColor: "#FFFFFF",
   secondaryTextColor: "#C4C9D4",
   errorColor: "#B42818",
   accentColor: "#FF9500",
-  boxBgColor: "#555c6e",
+  boxBgColor: "#171a21",
   boxTextColor: "#f1f2f4"
 }
