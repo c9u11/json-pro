@@ -2,7 +2,8 @@ import styled from "styled-components"
 import { CustomEditor } from "./CustomEditor";
 
 const Container = styled.div`
-  min-height: 100vh;
+  height: 100vh;
+  padding: 20px;
   background-color: ${props => props.theme.bgColor};
 `
 

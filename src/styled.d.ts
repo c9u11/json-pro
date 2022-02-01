@@ -2,13 +2,10 @@ import "styled-components";
 
 declare module "styled-components" {
   export interface DefaultTheme {
-    primaryTextColor: string;
-    secondaryTextColor: string;
+    headerBgColor: string;
+    headerTextColor: string;
+    toolBarBgColor: string;
+    toolBarTextColor: string;
     bgColor: string;
-    borderColor: string;
-    errorColor: string;
-    accentColor: string;
-    boxBgColor: string;
-    boxTextColor: string;
   }
 }
